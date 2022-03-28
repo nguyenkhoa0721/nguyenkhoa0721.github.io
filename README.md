@@ -1,1 +1,0 @@
-Template created by Takuya Matsuyama
