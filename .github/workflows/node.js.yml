@@ -19,7 +19,6 @@ jobs:
         with:
           node-version: 'lts/*'
           cache: 'npm'
-
       - name: Build
         run: |
           npm i
