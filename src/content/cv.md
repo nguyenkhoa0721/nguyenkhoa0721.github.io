@@ -43,7 +43,7 @@ Software engineer with 5+ years of experience specializing in backend and blockc
 - Implemented real-time messaging and AI integration features
 - **Achievement:** Reached 100,000 Monthly Active Users
 
-### Cosmos Layer 1 Blockchain with Bullshark DAG
+### VNIChain - Blockchain with Bullshark Consensus Protocol
 **2025** | Personal Project
 
 - Designed and implemented new consensus protocol (Bullshark DAG) for Cosmos ecosystem
