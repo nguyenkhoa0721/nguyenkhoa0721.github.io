@@ -1,18 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import type { CVData } from "../lib/markdown";
-import { Separator } from "./ui/separator";
-import {
-    Mail,
-    Phone,
-    MapPin,
-    Github,
-    Linkedin,
-    Globe,
-    Download,
-    Square,
-    Circle,
-} from "lucide-react";
+import { Download, Square, Circle } from "lucide-react";
 import { Button } from "./ui/button";
 import cvMarkdown from "../content/cv.md?raw";
 import matter from "gray-matter";
@@ -24,6 +13,7 @@ export const CV: React.FC<{ onExportPDF?: () => void }> = ({ onExportPDF }) => {
     useEffect(() => {
         const { data, content } = matter(cvMarkdown);
         setCvData({
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             metadata: data as any,
             content,
         });
@@ -31,7 +21,14 @@ export const CV: React.FC<{ onExportPDF?: () => void }> = ({ onExportPDF }) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ["summary", "experience", "projects", "education", "certifications", "awards"];
+            const sections = [
+                "summary",
+                "experience",
+                "projects",
+                "education",
+                "certifications",
+                "awards",
+            ];
             const scrollPosition = window.scrollY + 100;
 
             // Find the current section by checking which section's top is closest to current scroll position
@@ -107,7 +104,9 @@ export const CV: React.FC<{ onExportPDF?: () => void }> = ({ onExportPDF }) => {
                                         : "hover:bg-black hover:text-white"
                                 }`}
                             >
-                                <span className="opacity-50 mr-2">{String(index + 1).padStart(2, "0")}</span>
+                                <span className="opacity-50 mr-2">
+                                    {String(index + 1).padStart(2, "0")}
+                                </span>
                                 {section.label}
                             </button>
                         ))}
@@ -227,11 +226,15 @@ export const CV: React.FC<{ onExportPDF?: () => void }> = ({ onExportPDF }) => {
                                 else if (text.includes("experience")) sectionId = "experience";
                                 else if (text.includes("projects")) sectionId = "projects";
                                 else if (text.includes("education")) sectionId = "education";
-                                else if (text.includes("certifications")) sectionId = "certifications";
+                                else if (text.includes("certifications"))
+                                    sectionId = "certifications";
                                 else if (text.includes("awards")) sectionId = "awards";
 
                                 return (
-                                    <div id={sectionId} className="mt-12 mb-6 first:mt-0 scroll-mt-20">
+                                    <div
+                                        id={sectionId}
+                                        className="mt-12 mb-6 first:mt-0 scroll-mt-20"
+                                    >
                                         <div className="border-l-4 border-black pl-6 py-2">
                                             <h2 className="text-4xl font-black uppercase tracking-tight">
                                                 {children}
