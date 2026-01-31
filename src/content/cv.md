@@ -37,7 +37,7 @@ Software engineer with 5+ years of experience specializing in backend and blockc
 ## Projects
 
 ### Mozyfin
-**2026 - Present | Mozyfin
+**2026 - Present** | Mozyfin
 
 - Led development team building market research & wealth management platform 
 
