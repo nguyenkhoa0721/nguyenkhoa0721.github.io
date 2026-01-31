@@ -13,8 +13,11 @@ Software engineer with 5+ years of experience specializing in backend and blockc
 
 ## Experience
 
-### Tech Manager/Blockchain Engineer @ BoringAI
-**2024 - Present** | Vietnam
+### Tech Lead @ Mozyfin
+**2026 - Present** | Vietnam
+
+### Tech Lead/Blockchain Engineer @ BoringAI
+**2025 - 2026** | Vietnam
 
 ### Blockchain/Backend Engineer @ Alphatrue
 **2023 - 2025** | Vietnam 
@@ -33,15 +36,18 @@ Software engineer with 5+ years of experience specializing in backend and blockc
 
 ## Projects
 
+### Mozyfin
+**2026 - Present | Mozyfin
+
+- Led development team building market research & wealth management platform 
 
 ### SocialFi Telegram App
-**2024 - Present** | BoringAI
+**2024 - 2025** | BoringAI
 
 - Led development team building AI-powered virtual character interaction platform
 - Designed scalable system architecture supporting 100K+ Monthly Active Users
 - Built smart contracts on TON blockchain for tokenomics and user incentives
-- Implemented real-time messaging and AI integration features
-- **Achievement:** Reached 100,000 Monthly Active Users
+- **Achievement:** Reached 100,000 MAU
 
 ### VNIChain - Blockchain with Bullshark Consensus Protocol
 **2025** | Personal Project
